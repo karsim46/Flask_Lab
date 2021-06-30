@@ -4,13 +4,13 @@
     </head>
     <body>
         <h1>My Games List!</h1>
-        <a href="/order">Check Out This Other Order!</a>
-        {% for order in orders %}  
+        {% for order in orders_1 %}  
         <div>
           <p>
             {{ order.name }} {{ order.game }} <b>{{ order.date }}</b> {{ order.quantity }}
           </p>
           
+        
         </div>
         {% endfor %}
     </body>
