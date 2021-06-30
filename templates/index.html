@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }} - My Games List</title>
+    </head>
+    <body>
+        <h1>My Games List!</h1>
+        {% for order in orders %}  
+        <div>
+          <p>
+            {{ order.name }} {{ order.game }} <b>{{ order.date }}</b> {{ order.quantity }}
+          </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
